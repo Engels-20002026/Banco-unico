@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculadora</title>
+</head>
+<body>
+  
+<div class="contenedor-calculadora">
+    <div class="calculadora">
+        <!-- Pantalla donde se ven los números -->
+        <input type="text" id="pantalla" readonly value="0">
+        
+        <!-- Botones de la calculadora -->
+        <div class="botones">
+            <button class="btn-operador" onclick="limpiarPantalla()">C</button>
+            <button class="btn-operador" onclick="borrarUltimo()">⌫</button>
+            <button class="btn-operador" onclick="agregarCaracter('/')">/</button>
+            <button class="btn-operador" onclick="agregarCaracter('*')">*</button>
+
+            <button onclick="agregarCaracter('7')">7</button>
+            <button onclick="agregarCaracter('8')">8</button>
+            <button onclick="with(agregarCaracter('9'))">9</button>
+            <button class="btn-operador" onclick="agregarCaracter('-')">-</button>
+
+            <button onclick="agregarCaracter('4')">4</button>
+            <button onclick="agregarCaracter('5')">5</button>
+            <button onclick="agregarCaracter('6')">6</button>
+            <button class="btn-operador" onclick="agregarCaracter('+')">+</button>
+
+            <button onclick="agregarCaracter('1')">1</button>
+            <button onclick="agregarCaracter('2')">2</button>
+            <button onclick="agregarCaracter('3')">3</button>
+            <button class="btn-igual" onclick="calcular Resultado()">=</button>
+
+            <button class="btn-cero" onclick="agregarCaracter('0')">0</button>
+            <button onclick="agregarCaracter('.')">.</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
